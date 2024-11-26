@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <input type="password" placeholder="Password" id="pass">
+      <img src="images/eye-close.png" alt="" id="icon" onclick="show()">
+    </div>
+
+    <script>
+       let pass=document.getElementById("pass");
+       let icon=document.getElementById("icon");
+
+       function show(){
+        if(pass.type=="password"){
+          pass.type="text";
+          icon.src="images/eye-open.png";
+
+       }else{
+        pass.type="password";
+        icon.src="images/eye-close.png";
+       }
+       }
+       
+    </script>
+</body>
+</html>
